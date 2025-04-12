@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RM&DF - Tienda Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div id="intro">
+    <img src="images/logo.png" alt="RM&DF Logo" id="logo" />
+  </div>
+
+  <header>
+    <h1>RM&DF</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#sobre">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <input type="text" id="search" placeholder="Buscar productos..." />
+    </nav>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="productos-grid">
+        <div class="producto" data-nombre="Buzo Oversize">
+          <img src="images/buzo.jpg" alt="Buzo Oversize" />
+          <h3>Buzo Oversize</h3>
+          <p>$45.000</p>
+          <button onclick="agregarAlCarrito('Buzo Oversize', 45000)">Agregar</button>
+        </div>
+        <div class="producto" data-nombre="Remera Estampada">
+          <img src="images/remera.jpg" alt="Remera Estampada" />
+          <h3>Remera Estampada</h3>
+          <p>$30.000</p>
+          <button onclick="agregarAlCarrito('Remera Estampada', 30000)">Agregar</button>
+        </div>
+        <div class="producto" data-nombre="Pantalón Cargo">
+          <img src="images/pantalon.jpg" alt="Pantalón Cargo" />
+          <h3>Pantalón Cargo</h3>
+          <p>$55.000</p>
+          <button onclick="agregarAlCarrito('Pantalón Cargo', 55000)">Agregar</button>
+        </div>
+        <div class="producto" data-nombre="Campera Unisex">
+          <img src="images/campera.jpg" alt="Campera Unisex" />
+          <h3>Campera Unisex</h3>
+          <p>$75.000</p>
+          <button onclick="agregarAlCarrito('Campera Unisex', 75000)">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total"></p>
+      <p id="envio-info"></p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre RM&DF</h2>
+      <p>RM&DF es una tienda online argentina de ropa urbana, con un estilo único y auténtico. Nos dedicamos a ofrecer prendas exclusivas, cómodas y con mucha personalidad. ¡Vestite con actitud!</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Dudas o consultas? <a href="https://wa.me/5491112345678" target="_blank">Hablá con nosotros por WhatsApp</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RM&DF - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
